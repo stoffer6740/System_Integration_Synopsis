@@ -1,0 +1,14 @@
+{
+  "name":"nw-demo",
+  "main":"login.html",
+  "dependencies": {
+      "express": "~4.0.0",
+      "mongoose": "~3.6.13",
+      "body-parser": "~1.0.1"
+  },
+  "window": {
+    "toolbar":true,
+    "width":800,
+    "height":600
+  }
+}

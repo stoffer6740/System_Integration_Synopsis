@@ -1,0 +1,15 @@
+/* Font imports and variables */
+@font-face {
+  font-family: OpenSans-light;
+  src:url("../fonts/OpenSans-Regular.ttf");
+}
+$font-stack: "OpenSans-light", Times New Roman, sans-serif;
+
+body {
+  font-family: $font-stack !important;
+}
+
+/* Override for cards. */
+.card,.waves-effect {
+  display:block;
+}
