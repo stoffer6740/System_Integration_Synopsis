@@ -12,6 +12,13 @@
             controller: "LoginController as login"
           })
 
+          $stateProvider
+            .state('signup', {
+              url: "/signup",
+              templateUrl: "templates/signup.html",
+              controller: "SignUpController as signup"
+            })
+
         $stateProvider
           .state('index', {
             url:'/index',
@@ -23,13 +30,19 @@
 
     .controller("AppController", AppController)
     .controller("LoginController", LoginController)
-    .controller("CreateController", CreateController);
+    .controller("SignUpController", SignUpController);
 
     function AppController($scope) {
+      var app = this;
       alert("port: " + port);
     }
 
     function LoginController($scope) {
+      var login = this;
+    }
+
+    function SignUpController($scope) {
+      var signup = this;
 
     }
 
