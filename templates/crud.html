@@ -1,0 +1,95 @@
+<div class="row">
+
+  <div class="col s6">
+    <div class="card white darken1 hoverable  waves-effect waves-green lighten-1">
+      <div class="card-content dark-text modal-trigger" href="#modalCreate">
+        <span class="card-title">
+            CREATE
+        </span>
+    </div>
+  </div>
+</div>
+
+<div id="modalCreate" class="modal modal-fixed-footer">
+  <div class="modal-content">
+    <h4>Create</h4>
+    <p class="flow-text">Create some stuff</p>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">CREATE</a>
+  </div>
+</div>
+
+  <div class="col s6">
+    <div class="card white darken1 hoverable waves-effect waves-orange lighten-1">
+      <div class="card-content dark-text modal-trigger" href="#modalRead">
+        <span class="card-title">
+            READ
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div id="modalRead" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>Read</h4>
+      <p >Read some stuff</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-orange btn-flat ">READ</a>
+    </div>
+  </div>
+
+</div>
+
+<div class="row">
+
+  <div class="col s6">
+    <div class="card white darken1 hoverable waves-effect waves-teal lighten-1">
+      <div class="card-content dark-text modal-trigger" href="#modalUpdate">
+        <span class="card-title">
+            UPDATE
+        </span>
+    </div>
+  </div>
+  </div>
+
+  <div id="modalUpdate" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>Update</h4>
+      <p>Update some stuff</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-teal btn-flat ">UPDATE</a>
+    </div>
+  </div>
+
+  <div class="col s6">
+    <div class="card white darken1 hoverable waves-effect waves-red lighten-1">
+      <div class="card-content dark-text modal-trigger" href="#modalDelete">
+        <span class="card-title">
+            DELETE
+        </span>
+    </div>
+  </div>
+  </div>
+
+  <div id="modalDelete" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>Delete</h4>
+      <p>Delete some stuff</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat ">DELETE</a>
+    </div>
+  </div>
+  <script>
+
+  $(document).ready(function(){
+    console.log("doc ready");
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    jQuery('.modal-trigger').leanModal();
+  });
+  </script>
+
+</div>
